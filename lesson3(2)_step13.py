@@ -19,6 +19,7 @@ class TestUrls(unittest.TestCase):
         welcome_text_elt = browser.find_element_by_tag_name("h1")
         welcome_text = welcome_text_elt.text
         message="Congratulations! You have successfully registered!"
+        print(message)
         self.assertEqual(message, welcome_text)
         browser.quit()
 
